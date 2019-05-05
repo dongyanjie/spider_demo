@@ -9,8 +9,9 @@ python3
 
 ### 依赖
     pip install beautifulsoup4
+    pip install requests
 
 ### 运行
-    python.exe spider_main.py
+    python spider_main.py
 
 如果爬取不了,则百度修改了页面,根据页面修改爬取规则
