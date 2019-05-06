@@ -13,8 +13,12 @@ def use_simple_requests():
 def use_params_requests():
     # 构建请求参数
     params = {'param1': 'hello', 'param2': 'world'}
+    print(params)
     # 发送请求
     response = requests.get(URL_GET, params=params)
+    # post用data=    json格式用json=
+    # response = requests.post(URL_POST,data=params)
+
     # 处理响应
     print(response.headers)
     print(response.status_code, response.reason)

@@ -7,9 +7,8 @@ URL_GET = 'http://www.httpbin.org/get'
 
 def use_simple_urllib():
     response = urllib.request.urlopen(URL_IP)
-    print(response.info())
-
-    print(''.join([line for line in response.readlines()]))
+    # print(response.info())
+    print(response.read().decode('utf-8'))
 
 
 def use_params_urllib():
