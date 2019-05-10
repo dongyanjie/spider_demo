@@ -1,7 +1,7 @@
 from scrapy import cmdline
 
 # 直接解析到json文件中
-# cmdline.execute('scrapy crawl douban_spider -o douban.csv'.split())
+# cmdline.execute('scrapy crawl douban_spider -o douban.json'.split())
 
 # 执行pipelines.py里的Pipeline
 cmdline.execute('scrapy crawl douban_spider'.split())
