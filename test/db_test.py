@@ -1,6 +1,6 @@
 import re
-from urllib import request, parse
-from bs4 import BeautifulSoup
+from urllib import request, parse  # 网页下载器
+from bs4 import BeautifulSoup  # 网页解析器
 import pymysql.cursors
 
 
