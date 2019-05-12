@@ -1,7 +1,7 @@
 ###
 
 #scrapy框架
-#爬取matplotlib 网站中的例子
+#爬取matplotlib 网站中的例子,以及下载相关例子文件
 # 重写filepipeline
 
 import scrapy

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for matplotlib_examples project
+# Scrapy settings for so_image project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,15 +9,16 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'matplotlib_examples'
+BOT_NAME = 'so_image'
 
-SPIDER_MODULES = ['matplotlib_examples.spiders']
-NEWSPIDER_MODULE = 'matplotlib_examples.spiders'
+SPIDER_MODULES = ['so_image.spiders']
+NEWSPIDER_MODULE = 'so_image.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
 
 # Obey robots.txt rules
+# ROBOTSTXT_OBEY = False 为不遵循robots.txt规则
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
@@ -46,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'matplotlib_examples.middlewares.MatplotlibExamplesSpiderMiddleware': 543,
+#    'so_image.middlewares.SoImageSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'matplotlib_examples.middlewares.MatplotlibExamplesDownloaderMiddleware': 543,
+#    'so_image.middlewares.SoImageDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -64,11 +65,11 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'matplotlib_examples.pipelines.MyFilesPipeline': 1,
-    'matplotlib_examples.pipelines.MatplotlibExamplesPipeline': 300,
+    'scrapy.pipelines.images.ImagesPipeline': 1,
+    # 'so_image.pipelines.SoImagePipeline': 300,
 }
 # 下载路径
-FILES_STORE = 'examples_src'
+IMAGES_STORE = 'download_images'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -90,3 +91,9 @@ FILES_STORE = 'examples_src'
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# 生成略缩图
+IMAGES_THUMBS = {
+    'small': (50, 50),
+    'big': (270, 270),
+}

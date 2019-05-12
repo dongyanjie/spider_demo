@@ -1,0 +1,9 @@
+###
+
+#scrapy
+#爬取http://image.so.com/   360图片
+
+import scrapy
+import json
+from scrapy import Request
+
