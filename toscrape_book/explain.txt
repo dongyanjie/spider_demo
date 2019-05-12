@@ -1,0 +1,9 @@
+###
+
+#scrapy
+#爬取 http://books.toscrape.com/ 网站中图书列表信息
+
+import scrapy
+from scrapy.linkextractors import LinkExtractor
+
+

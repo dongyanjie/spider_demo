@@ -1,0 +1,9 @@
+###
+
+#requests + BeautifulSoup
+#爬取豆瓣电影排行榜top250
+
+from bs4 import BeautifulSoup
+import requests
+import os
+

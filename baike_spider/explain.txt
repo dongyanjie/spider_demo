@@ -1,0 +1,9 @@
+###
+
+# urllib.request+ urllib.parse + BeautifulSoup
+#爬取 百度百科 词条信息
+
+from bs4 import BeautifulSoup
+import re
+import urllib.parse
+import urllib.request
