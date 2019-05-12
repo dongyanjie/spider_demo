@@ -1,0 +1,12 @@
+###
+
+#scrapy框架
+#爬取matplotlib 网站中的例子
+# 重写filepipeline
+
+import scrapy
+from scrapy.linkextractors import LinkExtractor
+from scrapy.pipelines.files import FilesPipeline
+from urllib.parse import urlparse
+from os.path import basename, dirname, join
+
