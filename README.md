@@ -2,6 +2,7 @@
 1.爬取百度百科
 2.爬取豆瓣top250
 3.爬取图书信息
+4.爬取360图片
 
 ###推荐使用ide PyCharm
 
@@ -16,5 +17,8 @@ python3
 
 ### 运行
     python spider_main.py
-
+    
+    scrapy crawl xxx（爬虫名）
+    
 如果爬取不了,则可能修改了页面,根据页面修改爬取规则
+
