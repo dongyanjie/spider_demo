@@ -8,6 +8,7 @@
 import scrapy
 
 
+# 书籍信息
 class ToscrapeBookItem(scrapy.Item):
     upc = scrapy.Field()  # 产品编码
     name = scrapy.Field()  # 书名
@@ -15,3 +16,9 @@ class ToscrapeBookItem(scrapy.Item):
     stock = scrapy.Field()  # 库存量
     review_rating = scrapy.Field()  # 评价等级
     review_num = scrapy.Field()  # 评价数量
+
+
+# 名人名言
+class QuotesItem(scrapy.Item):
+    quote = scrapy.Field()  # 名言
+    author = scrapy.Field()  # 作者

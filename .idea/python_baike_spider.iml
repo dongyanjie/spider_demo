@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/douban_scrapy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/toscrape_book" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/matplotlib_examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/browser_cookie" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
