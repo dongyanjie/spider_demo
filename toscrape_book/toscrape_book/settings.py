@@ -65,6 +65,11 @@ ROBOTSTXT_OBEY = True
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'toscrape_book.pipelines.ToscrapeBookPipeline': 300,
+    # 'toscrape_book.pipelines.SQLitePipeline': 400,
+    # 'toscrape_book.pipelines.MysqlPipeline': 401,
+    # 'toscrape_book.pipelines.RedisPipeline': 402,
+    # 'toscrape_book.pipelines.MysqlAsyncPipeline': 404,
+
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
